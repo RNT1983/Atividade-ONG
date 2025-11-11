@@ -1,0 +1,16 @@
+/* utilities.css - small helper utilities */
+.text-center{text-align:center}
+.mt-1{margin-top:var(--space-1)}
+.mt-2{margin-top:var(--space-2)}
+.hidden{display:none}
+
+/* simple grid helper for 12 columns */
+.grid-12{display:grid; grid-template-columns:repeat(12, 1fr); gap:var(--space-3)}
+.col-6{grid-column:span 6}
+.col-4{grid-column:span 4}
+.col-3{grid-column:span 3}
+
+/* responsive helpers */
+@media (max-width: 768px){
+  .col-6, .col-4, .col-3{grid-column:span 12}
+}

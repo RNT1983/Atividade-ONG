@@ -1,0 +1,68 @@
+/* base.css - Design System variables and typography */
+:root{
+  /* Color palette (8 colors) */
+  --color-primary: #0B5FFF;
+  --color-primary-700: #0847cc;
+  --color-secondary: #00BFA6;
+  --color-accent: #FFB703;
+  --color-danger: #E53935;
+  --color-muted: #6B7280;
+  --color-bg: #F7F7FB;
+  --color-card: #FFFFFF;
+
+  /* Semantic aliases */
+  --bg: var(--color-bg);
+  --text: #111827;
+  --muted: var(--color-muted);
+
+  /* Spacing scale (modular) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* Typography (min 5 sizes) */
+  --font-family-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+
+  /* Grid */
+  --grid-columns: 12;
+  --container-max: 1200px;
+}
+
+/* Base reset and typography */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:var(--font-family-sans);
+  font-size:var(--font-size-md);
+  color:var(--text);
+  background:var(--bg);
+  margin:0;
+  line-height:1.4;
+}
+
+/* Utility container */
+.container{
+  width:100%;
+  max-width:var(--container-max);
+  margin:0 auto;
+  padding:0 var(--space-2);
+}
+
+/* Headings */
+h1{font-size:var(--font-size-xl); margin:var(--space-4) 0 var(--space-2)}
+h2{font-size:var(--font-size-lg); margin:var(--space-3) 0 var(--space-2)}
+h3{font-size:var(--font-size-md); margin:var(--space-2) 0}
+
+/* Accessibility focus */
+:focus{outline:3px solid rgba(11,95,255,0.25); outline-offset:2px}
